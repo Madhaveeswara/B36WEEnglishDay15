@@ -1,51 +1,68 @@
 <html>
 <head>
-<title>Pagination Demo</title>
-<script src="script.js">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title style="text-align: centre;">Pagination Demo</title>
+<script src="script.js" defer>
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
 
-/* Pagination links */
-.pagination a {
-  color: #3258a8;
+
+
+.custom-div {
+    
+    display: flex;
+    justify-content: center;
+  } 
+
+  .pagination-custom {
+    
+    height:80%;
+    width:80%;
+    text-align: center;
+}
+
+.block {
+    height:5%;
+    text-align:left;
+}
+.center {
+    margin:auto;
+   }
+
+.pagination-custom a {
+  color: black;
   float: left;
-  border: 1px solid #f0f0f0;
   padding: 8px 16px;
   text-decoration: none;
-  font-family: Roboto;
-  transition: background-color .3s;
+  margin: auto;
+}
+ /**
+@media screen and (max-width: 1400px) and (min-width: 800px) {
+  .custom-table-div {
+    width: 75%;
+  }
 }
 
-
-.pagination a:hover {
-  background-color: #3258a8;
-  color: white;
-  cursor: pointer;
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  .custom-table-div {
+    width: 75%;
+  }
 }
 
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  .custom-table-div {
+    width: 100%;
+  }
+} 
+
+**/
 
 
 </style>
 
 </head>
 <body>
-    <h1> Pagination Demo </h1>
-    <div class="pagination">
-        <a href="#">First</a>
-        <a href="#">Previous</a>
-        <a href="#">1</a>
-        <a class="active" href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="https://www.facebook.com" target="_blank">6</a>
-        <a href="#">7</a>
-        <a href="#">8</a>
-        <a href="#">9</a>
-        <a href="#">10</a>
-        <a href="#">Last</a>
-      </div>
+
 </body>    
 </html>
